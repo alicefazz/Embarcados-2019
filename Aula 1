@@ -1,0 +1,21 @@
+1) O que são sistemas embarcados?
+São sistemas criados para executarem apenas um tipo de tarefa pré-definidada, diferentemente por exemplo de computadores, que executam inúmeras tarefas distintas.
+
+2) O que são sistemas microprocesssados?
+É um circuito integrado que executa todas as funções de cálculo e tomada de decisões de um computador. Operam no sistema binário.
+
+3) Apresente aplicações de sistemas embarcados: 
+(a) Para a indústria automotiva; 
+Controlador de injeção eletrônica, acionadores de air-bags, freios ABS, etc.
+
+(b) Para eletrodomésticos; 
+Microondas, Máquina de lavar,aparelhos de tv com controle remoto, ar-condicionado, etc.
+
+(c) Para automação industrial.
+Alarmes, robôs, etc.
+
+4) Cite arquiteturas possíveis e as diferenças entre elas.
+Arquiteturas de Hardware(conjunto de componentes físicos) e arquitetura de software( conjunto de programas, instruções e regras informáticas).
+
+5) Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+Baixo cursto,minúsculo e é um computador completo.
