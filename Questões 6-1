@@ -1,0 +1,60 @@
+1. Como se utiliza o comando ps para:
+
+(a) Mostrar todos os processos rodando na máquina?
+
+  No terminal, usar o seguinte comando: "ps -e".
+
+(b) Mostrar os processos de um usuário?
+
+  No terminal, usar o seguinte comando: "ps -u <nome do usuário>".
+
+(c) Ordenar todos os processos de acordo com o uso da CPU?
+
+   No terminal, usar o seguinte comando: "ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head".
+
+(d) Mostrar a quanto tempo cada processo está rodando?
+
+  No terminal, usar o seguinte comando: "ps -u alunos kstart_time".
+
+-------------------------------------------------------------------------------------------------------------------------------
+2. De onde vem o nome fork()?
+-------------------------------------------------------------------------------------------------------------------------------
+3. Quais são as vantagens e desvantagens em utilizar:
+
+(a) system()?
+
+  Vantagens: Permite a utilização de comandos do shell direto na programação e cria um processo-filho de forma direta.
+  Desvantagens: Depende bastante do sistema, fazendo com que abram brechas para falhas de execução.
+
+(b) fork() e exec()?
+
+  Vantagens: O processo-pai e o processo-filho continuam executando normalmente, pois o PC é igual. Também se uma identificação melhor dos processos, utilizando a função getpid().
+  Desvantagens: Não permite a criação direta em um unico passo de um processo-filho.
+-------------------------------------------------------------------------------------------------------------------------------
+4. É possível utilizar o exec() sem executar o fork() antes?
+-------------------------------------------------------------------------------------------------------------------------------
+5. Quais são as características básicas das seguintes funções:
+
+(a) execp()?
+
+  Aceita que o nome ou procura do programa estejam no current path.
+
+(b) execv()?
+
+  Permite que seja aceita uma lista nula como entrada.
+
+(c) exece()?
+
+  Aceita um argumento adicional.
+
+(d) execvp()?
+
+  Junção dos sois primeiros, ou seja, não  necessario colocar o caminho completo para procurar o programa e aceita uma lista com argumentos nulos como entrada.
+
+(e) execve()?
+
+  Permite uma lista com argumentos nulos como entrada e tambem aceita um argumento adicional na chamada.
+
+(f) execle()?
+
+  Permite um argumento adicional e tambem permite a utilização de mecanismos var args em programas com linguagem C.
