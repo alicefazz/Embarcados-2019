@@ -1,0 +1,49 @@
+1. Considerando a biblioteca-padrão da linguagem C, responda:
+
+(a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+
+  Abrir arquivo: <ponteiro> = fopen("nome do arquivo", "tipo de abertura");
+  Fechar arquivo: fclose(<ponteiro>);
+
+(b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+  
+  fprintf(<ponteiro>, "tipos de variaveis", variavel a ser armazenada);
+
+(c) Quais são as funções (e seus protótipos) para ler arquivos?
+
+  fscanf(<ponteiro>, "tipos de variaveis", nome das variaveis a serem lidas);
+
+(d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
+
+  fseek(<ponteiro>, qtde de bytes que o ponteiro vai andar, valor de onde o ponteiro inicia);
+
+(e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+
+  Biblioteca: stdio.h
+-----------------------------------------------------------------------------------------------------------------------------------
+2. O que é a norma POSIX?
+-----------------------------------------------------------------------------------------------------------------------------------
+3. Considerando a norma POSIX, responda:
+
+(a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+
+  Abrir arquivos: int open (const char *path, int *oflag);
+  Fechar arquivos: int close (int fildes);
+
+(b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+
+  ssize_t write(int fildes, const void *buf, syze_t nbyte);
+
+(c) Quais são as funções (e seus protótipos) para ler arquivos?
+
+  ssize_t read(int fildes, const void *buf, syze_t nbyte);
+
+(d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
+
+  off_t lseek(int fd, off_t offset, int whence);
+
+(e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+
+  #include <fcntl.h>	// Para a funcao open()
+  #include <unistd.h>	// Para a funcao close()
+  #include <stdlib.h>	// Para a função exit()
